@@ -192,29 +192,6 @@ audio::-webkit-media-controls-current-time-display {
     justify-content: center;
 }
 
-/* Los estados :hover quedan condicionados a dispositivos con mouse real.
-   Así, en celular/tablet (touch) el primer toque activa el click directo
-   en vez de quedar "atrapado" en el estado hover (que obligaba a tocar 2 veces). */
-@media (hover: hover) and (pointer: fine) {
-    .boton:hover {
-        color: var(--color-terciario);
-        background-color: var(--color-principal);
-        border: 1px solid var(--color-terciario);
-        padding: 10px 30PX;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .boton1:hover {
-        color: var(--color-principal);
-        background-color: var(--color-secundario);
-        border: 1px solid var(--color-principal);
-        padding: 10px 30PX;
-        text-align: center;
-        text-decoration: none;
-    }
-}
-
 .boton1 {
     border: 1px solid var(--color-principal);
     background-color: var(--color-principal);
@@ -614,9 +591,6 @@ footer img {
 
 .contenido a {
     color: var(--color-principal);
-}
-.contenido a:hover {
-    color: var(--color-secundario);
 }
 
 .end {
